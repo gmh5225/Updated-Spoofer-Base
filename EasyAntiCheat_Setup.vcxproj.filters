@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Driver">
+      <UniqueIdentifier>{c895c382-1a5a-49fe-91a7-9e46b574c343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils">
+      <UniqueIdentifier>{7cf874f9-dc5e-4e34-9139-49e05713bbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Main">
+      <UniqueIdentifier>{973ccffb-7a75-4dda-bf9d-743428ef4c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Main\Authorization">
+      <UniqueIdentifier>{ecdc3588-833f-482c-9d2f-10adf26747b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Driver\Mapper">
+      <UniqueIdentifier>{5d7b4f8d-6b57-47e8-ab5c-3457e669b1b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Driver\Driver">
+      <UniqueIdentifier>{d590a263-d13c-4675-9406-d453e4f005b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils\Protection">
+      <UniqueIdentifier>{ab138b3d-255c-46e1-bbb9-20067a2f6682}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base.cpp">
+      <Filter>Source\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper\intel_driver.cpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper\kdmapper.cpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper\portable_executable.cpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper\service.cpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper\utils.cpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Authorization.hpp">
+      <Filter>Source\Main\Authorization</Filter>
+    </ClInclude>
+    <ClInclude Include="Display.hpp">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Bytes.hpp">
+      <Filter>Source\Driver\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption.hpp">
+      <Filter>Source\Utils\Protection</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.hpp">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper\utils.hpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper\intel_driver.hpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper\intel_driver_resource.hpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper\kdmapper.hpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper\nt.hpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper\portable_executable.hpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper\service.hpp">
+      <Filter>Source\Driver\Mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Protection.hpp">
+      <Filter>Source\Utils\Protection</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib">
+      <Filter>Source\Main\Authorization</Filter>
+    </Library>
+    <Library Include="library_x64.lib">
+      <Filter>Source\Main\Authorization</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
